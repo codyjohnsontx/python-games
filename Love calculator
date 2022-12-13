@@ -1,4 +1,8 @@
-
+##
+##
+##see comment at bottom for details and debriefing
+##
+##
 print("Welcome to the Love Calculator!")
 name1 = input("What is your name? \n")
 name2 = input("What is their name? \n")
@@ -45,3 +49,28 @@ elif love_score > 40 and love_score < 50:
     print(f" Your score is {love_score}, you are alright together.")
 else:
     print(f" Your score is {love_score}.")
+
+
+
+
+
+
+
+"""**Write a program that tests the compatibility between two people.
+
+To work out the love score between two people:
+
+Take both people's names and check for the number of times the letters in the word TRUE occurs.
+
+Then check for the number of times the letters in the word LOVE occurs.
+
+Then combine these numbers to make a 2 digit number.**
+
+-This was a fun one that felt good to finally get right. I was a little stumped trying to figure out best to count out each instance of the letters of 'true' and 'love' without writing a bunch of unreadable code
+Another thing that got me for a little bit was concatenating the sum of 'true' and 'love' together IE 7 + 8 = 78 A little time, research and brainstorming later I was able to figure it out
+
+Thanks for checking it out!
+
+-Cody
+
+"""
