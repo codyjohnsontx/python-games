@@ -7,19 +7,41 @@ name2 = input("What is their name? \n")
 #Write your code below this line 
 name1 = name1.lower()
 name2 = name2.lower()
+#cover the names to lowercase to count later
 name1_lowercase = name1.lower()
 name2_lowercase = name2.lower()
 
-char_dict = {}
-for char in name1_lowercase:
-    if char not in char_dict:
-        char_dict[char] = 0
-    
-    char_dict[char] +=1
+#combine both names together to count once
+combined_Name = name1_lowercase + name2_lowercase
+combined_Name_one = combined_Name.replace(" ", "")
+# 
+#
+#count number of times each letter of true love occurs in string
+t = combined_Name_one.count('t')
+r = combined_Name_one.count('r')
+u = combined_Name_one.count('u')
+e = combined_Name_one.count('e')
 
-print(char_dict)
+l = combined_Name_one.count('l')
+o = combined_Name_one.count('o')
+v = combined_Name_one.count('v')
+e = combined_Name_one.count('e')
+# set number of times each letter occurs equal to a string
+true = t + r + u + e  
+love = l + o + v + e
 
-#print(name1_lowercase)
-#print(name2_lowercase)
-num1 = name1.count('true love')
-print(num1)
+#convert to string to concate numbers together ie 7+8 = 78
+love_str = str(true) + str(love)
+
+#convert str back to integer for if statement
+
+love_score = int(love_str)
+#print(love_score)
+
+
+if love_score < 10 or love_score > 90:
+    print(f" Your score is {love_score}, you go together like coke and mentos.")
+elif love_score > 40 and love_score < 50:
+    print(f" Your score is {love_score}, you are alright together.")
+else:
+    print(f" Your score is {love_score}.")
